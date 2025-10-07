@@ -61,10 +61,6 @@ class ApplyCLAHE:
 # Define augmentation transforms (same as your original)
 train_transform = transforms.Compose([
     ApplyCLAHE(cliplimit=1.0, tilesize=8),  # Enhance original
-    transforms.RandomHorizontalFlip(),
-    transforms.RandomVerticalFlip(),
-    transforms.RandomAdjustSharpness(sharpness_factor=2, p=0.5),
-    transforms.RandomRotation(degrees=15),
 ])
 
 # No augmentation for validation (same as your original)
