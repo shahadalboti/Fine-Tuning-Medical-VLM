@@ -5,7 +5,7 @@ This repo contains:
 - **MedGemma** LoRA fine-tuning + inference (in `medgemma/`)
 
 
-## Lingshu — Train
+## Lingshu — Fine-Tune (LoRA)
 ```bash
 python train.py   --csv_paths /data/a.csv,/data/b.csv   --image_folders /imgs_a,/imgs_b   --model_id lingshu-medical-mllm/Lingshu-32B   --output_dir ./outputs/fundus_lora_lingshu   --epochs 40 --train_bs 16 --eval_bs 2
 ```
@@ -15,7 +15,7 @@ python train.py   --csv_paths /data/a.csv,/data/b.csv   --image_folders /imgs_a,
 python inference_lingshu.py   --model_id lingshu-medical-mllm/Lingshu-32B   --cache_dir /path/to/.cache   --local_files_only   --image_root /data/ClinicalTrial   --ground_truth_csv /data/TestCT6-26.csv   --output_csv ./outputs/lingshu_double_prompt_results.csv   --apply_clahe --clahe_cliplimit 1.0 --clahe_tilesize 8   --max_new_tokens 48 --temperature 0.0
 ```
 
-## MedGemma — Fine-Tune (LoRA or full)
+## MedGemma — Fine-Tune (LoRA)
 ```bash
 python medgemma/finetune_lora.py
 ```
