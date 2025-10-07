@@ -2,9 +2,8 @@
 
 This repo contains:
 - **Lingshu-32B** (Qwen2.5-VL-compatible) LoRA fine-tuning + inference
-- **MedGemma** LoRA / full fine-tuning + inference (in `medgemma/`)
+- **MedGemma** LoRA fine-tuning + inference (in `medgemma/`)
 
-> ⚠️ Do **NOT** commit patient data or CSVs. Keep paths local.
 
 ## Lingshu — Train
 ```bash
