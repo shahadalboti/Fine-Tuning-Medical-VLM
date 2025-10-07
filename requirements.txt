@@ -1,0 +1,12 @@
+torch>=2.2
+transformers>=4.43
+accelerate>=0.33
+trl>=0.9
+peft>=0.12
+pillow>=10.0
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+# qwen-vl utilities; adjust to your source/package name
+qwen-vl-utils>=0.0.1
+opencv-python>=4.9
